@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards | ThinkPlus Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">ThinkPlus</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="mocktest.html">Mock Test</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="contest.html">Contest</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="contact.html" class="btn btn-contact">Contact</a>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="rewards-section section-padding bg-light">
+            <div class="container">
+                <h2>Earn Rewards While You Learn!</h2>
+                <p class="subtitle">Complete 2-3 hours of classes daily to maintain your streak and earn Gold Coins!</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card streak-card">
+                        <i class="fas fa-fire-alt"></i>
+                        <h3>Daily Streak Tracker</h3>
+                        <p class="stat-value">🔥 Your Streak: **3 Days**</p>
+                    </div>
+                    <div class="stat-card coin-card">
+                        <i class="fas fa-coins"></i>
+                        <h3>Current Gold Coins</h3>
+                        <p class="stat-value">💰 <span id="coin-count">0</span></p>
+                    </div>
+                </div>
+
+                <div class="redeem-section">
+                    <h3>Redeem Your Gold Coins for Discounts</h3>
+                    <div class="redeem-offers-grid">
+                        
+                        <div class="offer-card">
+                            <i class="fas fa-gift"></i>
+                            <h4>10% Off Medium Course</h4>
+                            <p class="cost">Requires **10,000** Gold Coins</p>
+                            <a href="#" class="btn btn-redeem btn-secondary">Redeem Now</a>
+                        </div>
+                        
+                        <div class="offer-card">
+                            <i class="fas fa-gift"></i>
+                            <h4>20% Off Advanced Course</h4>
+                            <p class="cost">Requires **20,000** Gold Coins</p>
+                            <a href="#" class="btn btn-redeem btn-primary">Redeem Now</a>
+                        </div>
+                        
+                        <div class="offer-card">
+                            <i class="fas fa-gift"></i>
+                            <h4>Free Mock Test Series Access</h4>
+                            <p class="cost">Requires **5,000** Gold Coins</p>
+                            <a href="#" class="btn btn-redeem btn-secondary">Redeem Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; ThinkPlus Education 2025. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <style>
+        /* Rewards Page Styles */
+        .stats-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .stat-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            max-width: 350px;
+        }
+        .stat-card i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .streak-card .fa-fire-alt { color: #ff4500; }
+        .coin-card .fa-coins { color: #ffd700; }
+
+        .redeem-section {
+            text-align: center;
+        }
+        .redeem-section h3 {
+            margin-bottom: 30px;
+        }
+        .redeem-offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .offer-card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .offer-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        .cost {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</body>
+</html>

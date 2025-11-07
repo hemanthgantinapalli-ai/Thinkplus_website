@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Mock Test | ThinkPlus Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">ThinkPlus</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="mocktest.html">Mock Test</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="contest.html">Contest</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="contact.html" class="btn btn-contact">Contact</a>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mocktest-section section-padding">
+            <div class="container">
+                <h2>Take Your **Free CAT Mock Test!**</h2>
+                <p class="subtitle">Test your current preparedness level with 5 sample CAT-level questions.</p>
+                <p class="message-scholarship"><i class="fas fa-trophy"></i> **Top scorers will win ThinkPlus Scholarships!** This exam helps you get a higher rank and free scholarship in our classes.</p>
+                
+                <div class="quiz-form">
+                    <div id="quiz-container">
+                        </div>
+                    
+                    <button id="submit-quiz" class="btn btn-primary" type="button">Submit Test & Get Score</button>
+
+                    <div id="quiz-result" class="quiz-result-display">
+                        </div>
+                </div>
+
+                <div class="leaderboard">
+                    <h3>Last Week's Top Scorers</h3>
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Hemanth R.</td><td>5/5</td></tr>
+                            <tr><td>2</td><td>Priya S.</td><td>4/5</td></tr>
+                            <tr><td>3</td><td>Kiran V.</td><td>4/5</td></tr>
+                            <tr><td>4</td><td>Anjali P.</td><td>3/5</td></tr>
+                            <tr><td>5</td><td>Rajesh T.</td><td>3/5</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; ThinkPlus Education 2025. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <style>
+        /* Mock Test Page Styles */
+        .message-scholarship {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #dc3545;
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            background-color: #fff0f3;
+        }
+        .quiz-form {
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question-block h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .options label:hover {
+            background-color: var(--light-bg);
+        }
+        #submit-quiz {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .quiz-result-display {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--light-bg);
+            text-align: center;
+        }
+        .leaderboard {
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+        }
+        .leaderboard h3 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 12px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+        .leaderboard-table th {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        .success-message { color: #28a745; font-weight: 600; }
+        .good-score { color: #ffc107; font-weight: 600; }
+        .needs-work { color: #dc3545; font-weight: 600; }
+    </style>
+</body>
+</html>
